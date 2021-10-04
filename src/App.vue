@@ -1,26 +1,34 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div class="app">
+    <div class="mb-2 text-center">
+      <img class="logo" src="@/assets/gerb-uk.svg" alt="Ukranian Gerb">
+    </div>
+
+    <div class="text-center pg-2 mb-2">
+      <h1>Гаражний коператив "ПІВНІЧ"</h1>
+    </div>
+
+    <div class="text-center">
+      Сай знаходиться в розробці
+    </div>
+
+    <router-view />
+  </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
 export default {
   name: 'App',
-  components: {
-    HelloWorld
-  }
-}
+};
 </script>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+<style scoped lang="scss">
+.app {
+  min-height: 100vh;
+
+  .logo {
+    width: 200px;
+    height: auto;
+  }
 }
 </style>

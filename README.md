@@ -7,13 +7,24 @@ npm install
 
 ### Compiles and hot-reloads for development
 ```
-npm run serve
+npm run dev
 ```
 
 ### Compiles and minifies for production
 ```
 npm run build
 ```
+### Previewing Locally
+#### https://cli.vuejs.org/guide/deployment.html#general-guidelines
+```
+# -s flag means serve it in Single-Page Application mode
+# which deals with the routing problem below
+
+npm install -g serve
+serve -s dist
+```
+
+
 
 ### Lints and fixes files
 ```
