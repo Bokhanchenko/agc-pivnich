@@ -1,19 +1,42 @@
 <template>
   <div class="news-page">
+    <div class="mb-2">
+      <h2>{{ $t('routes.news') }}</h2>
+    </div>
+
+    <div class="content">
+      <NewsItem
+        class="mb-4"
+        v-for="item in news"
+        :key="item.id"
+        :value="item"
+      />
+    </div>
   </div>
 </template>
 
 <script>
-export default {
+import { defineComponent } from "vue";
+import { news } from "@/db";
+import NewsItem from './components/NewsItem';
+
+export default defineComponent({
   name: 'NewsPage',
 
-  data() {
+  components: {
+    NewsItem
   },
 
-  methods: {}
-};
+  setup () {
+    return {
+      news
+    };
+  }
+});
 </script>
 
 <style scoped lang="scss">
+.news-page {
 
+}
 </style>

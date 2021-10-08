@@ -4,7 +4,6 @@
 }
 
 html, body {
-  width: 100%;
   min-height: 100vh;
 }
 
@@ -12,12 +11,40 @@ html, body {
   text-align: center;
 }
 
+.text-right {
+  text-align: right;
+}
+
 .pg-2 {
   padding: 20px;
 }
 
+.mb-1 {
+  margin-bottom: 10px;
+}
+
 .mb-2 {
   margin-bottom: 20px;
+}
+
+.mb-4 {
+  margin-bottom: 40px;
+}
+
+.pg-2-0 {
+  padding: 20px 0;
+}
+
+button {
+  padding: 5px;
+  cursor: pointer;
+  border: 1px solid $grey-300;
+
+  &.is-active {
+    border-color: $blue-500;
+    background-color: $blue-500;
+    color: $white;
+  }
 }
 
 

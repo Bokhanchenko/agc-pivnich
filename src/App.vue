@@ -1,34 +1,66 @@
 <template>
   <div class="app">
-    <div class="mb-2 text-center">
-      <img class="logo" src="@/assets/gerb-uk.svg" alt="Ukranian Gerb">
-    </div>
+    <div class="wrapper">
+      <PageHeader />
+      <PageHeaderM />
+      <NavMenu />
 
-    <div class="text-center pg-2 mb-2">
-      <h1>Гаражний коператив "ПІВНІЧ"</h1>
-    </div>
+      <section class="content">
+        <router-view />
+      </section>
 
-    <div class="text-center">
-      Сай знаходиться в розробці
+      <PageFooter />
     </div>
-
-    <router-view />
   </div>
 </template>
 
 <script>
-export default {
+import { defineComponent } from "vue";
+import PageHeader from '@/modules/core/components/PageHeader';
+import PageHeaderM from '@/modules/core/components/PageHeaderM';
+import PageFooter from '@/modules/core/components/PageFooter';
+import NavMenu from '@/modules/core/components/NavMenu';
+
+export default defineComponent({
   name: 'App',
-};
+
+  components: {
+    PageHeader,
+    PageHeaderM,
+    PageFooter,
+    NavMenu
+  }
+});
 </script>
 
 <style scoped lang="scss">
 .app {
   min-height: 100vh;
 
-  .logo {
-    width: 200px;
-    height: auto;
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    max-width: 1200px;
+    min-height: 100vh;
+  }
+
+  .content {
+    flex: 1;
+    padding: 10px;
+  }
+
+  .page-header-m {
+    display: none;
+  }
+
+  @media screen and (max-width: $--xs) {
+    .page-header {
+      display: none;
+    }
+    .page-header-m {
+      display: flex;
+    }
   }
 }
 </style>

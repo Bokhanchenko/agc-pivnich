@@ -8,7 +8,9 @@
     "lf": "vue-cli-service lint --fix --ignore-path .eslintignore ."
   },
   "dependencies": {
+    "@oruga-ui/oruga-next": "^0.4.5",
     "core-js": "^3.6.5",
+    "lodash": "^4.17.21",
     "vue": "^3.0.0",
     "vue-router": "^4.0.11"
   },

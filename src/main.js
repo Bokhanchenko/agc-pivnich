@@ -1,8 +1,10 @@
-import { createApp } from 'vue';
-import App from './App.vue';
-import router from './plugins/router';
-import '@/styles/global.scss';
+import { createApp } from "vue";
+import App from "./App.vue";
+import router from "./plugins/router";
+import mixins from "./plugins/mixins";
+import "@/styles/index.scss";
 
 createApp(App)
   .use(router)
-  .mount('#app');
+  .mixin(mixins)
+  .mount("#app");
