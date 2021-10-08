@@ -1,7 +1,8 @@
 import { createWebHistory, createRouter } from "vue-router";
 
 import NewsPage from "@/modules/news/NewsPage";
-import NewsFormPage from "@/modules/news/NewsFormPage";
+import NewsEditPage from "@/modules/news/NewsEditPage";
+import NewsFormPage from "@/modules/news/components/NewsForm";
 import DocsPage from "@/modules/docs/DocsPage";
 import PaymentPage from "@/modules/docs/PaymentPage";
 
@@ -11,7 +12,21 @@ const routes = [
     name: "home",
     component: NewsPage
   },
-
+  {
+    path: "/news",
+    name: "news",
+    component: NewsPage
+  },
+  {
+    path: "/news/new",
+    name: "news-create",
+    component: NewsEditPage
+  },
+  {
+    path: "/news/:id",
+    name: "news-edit",
+    component: NewsEditPage
+  },
   {
     path: "/payment",
     name: "payment",

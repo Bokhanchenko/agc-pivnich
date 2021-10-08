@@ -5,7 +5,9 @@ const translations = {
     home: "Головна",
     news: "Новини",
     payment: "Реквізити",
-    docs: "Документи"
+    docs: "Документи",
+    "news-create": "Створення новини",
+    "news-edit": "Редагування новини"
   },
 
   payment: {
@@ -25,7 +27,13 @@ const translations = {
   news: {
     newsTitle: "Заголовок",
     date: "Дата публікації",
-    reporter: "Автор"
+    reporter: "Автор",
+    content: "Основна інформація"
+  },
+
+  buttons: {
+    submit: "Зберегти",
+    cancel: "Відмінити"
   }
 };
 

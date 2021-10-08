@@ -4,9 +4,13 @@
       <h3>{{ value.title }}</h3>
     </div>
 
-    <div class="mb-2">
-      <div>{{value.date.toLocaleString()}}</div>
-      <div>{{value.reporter}}</div>
+    <div class="flex a-middle mb-2">
+      <div class="mr-2 date">
+        {{ $t('news.date') }}: {{getParsedDate(value.date)}}
+      </div>
+      <div>
+        {{ $t('news.reporter') }}: {{value.reporter}}
+      </div>
     </div>
 
     <div v-html="value.content" />
@@ -15,6 +19,7 @@
 
 <script>
 import { defineComponent } from "vue";
+import { getParsedDate } from "@/plugins/halpers";
 
 export default defineComponent({
   name: 'NewsItem',
@@ -22,15 +27,26 @@ export default defineComponent({
   props: {
     value: { type: Object, required: true }
   },
+
+  methods: {
+    getParsedDate
+  }
 });
 </script>
 
 <style scoped lang=scss>
+@import "@/styles/theme-chalk/src/button.scss";
+
 .news-item {
   ::v-deep img {
     max-width: 100%;
     height: auto;
     display: block;
+  }
+
+  .date {
+    padding: 4px;
+    background-color: $grey-300;
   }
 }
 </style>

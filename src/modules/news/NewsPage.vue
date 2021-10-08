@@ -6,7 +6,7 @@
 
     <div class="content">
       <NewsItem
-        class="mb-4"
+        class="mb-4 cv"
         v-for="item in news"
         :key="item.id"
         :value="item"

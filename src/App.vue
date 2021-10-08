@@ -36,6 +36,8 @@ export default defineComponent({
 <style scoped lang="scss">
 .app {
   min-height: 100vh;
+  background: url("./assets/app-back.jpeg") center center fixed;
+  background-size: cover;
 
   .wrapper {
     display: flex;
@@ -43,6 +45,7 @@ export default defineComponent({
     margin: 0 auto;
     max-width: 1200px;
     min-height: 100vh;
+    background-color: $grey-50;
   }
 
   .content {

@@ -31,8 +31,29 @@ html, body {
   margin-bottom: 40px;
 }
 
+.mr-2 {
+  margin-right: 20px;
+}
+
 .pg-2-0 {
   padding: 20px 0;
+}
+
+.flex {
+  display: flex;
+}
+
+.fl-wrap {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.a-middle {
+  align-items: center;
+}
+
+.cv {
+  content-visibility: auto;
 }
 
 button {
