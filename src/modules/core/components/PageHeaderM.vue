@@ -11,7 +11,18 @@
       </div>
 
       <div class="contacts">
-        email: agk.pivnich@gmail.com
+        <div>
+          email:
+          <el-link href="mailto:agk.pivnich@gmail.com">
+            agk.pivnich@gmail.com
+          </el-link>
+        </div>
+        <div>
+          телефон:
+          <el-link href="tel:%2B380673399595">
+            +38 (067) 339-95-95
+          </el-link>
+        </div>
       </div>
     </div>
   </div>
@@ -20,12 +31,14 @@
 <script>
 import { defineComponent } from "vue";
 import TheLogo from "@/modules/core/components/TheLogo";
+import { ElLink } from 'element-plus';
 
 export default defineComponent({
   name: 'PageHeaderM',
 
   components: {
-    TheLogo
+    TheLogo,
+    ElLink
   }
 });
 </script>
