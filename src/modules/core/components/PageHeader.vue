@@ -14,16 +14,22 @@
     </div>
 
     <div class="right">
-      email:
-      <el-link href="mailto:agk.pivnich@gmail.com">
-        agk.pivnich@gmail.com
-      </el-link>
-      <br>
+      <div>
+        email:
+        <el-link href="mailto:agk.pivnich@gmail.com">
+          agk.pivnich@gmail.com
+        </el-link>
+      </div>
 
-      телефон:
-      <el-link href="tel:%2B380673399595">
-        +38 (067) 339-95-95
-      </el-link>
+      <div>
+        адміністрація:
+        <el-link href="tel:%2B380673399595">
+          +38 (067) 444-95-95
+        </el-link>
+      </div>
+      <div>
+        02232, м. Київ, вул. М. Закревського, 93 <br>
+      </div>
     </div>
   </div>
 </template>

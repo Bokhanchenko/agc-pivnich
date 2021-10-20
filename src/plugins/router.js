@@ -5,6 +5,7 @@ import NewsEditPage from "@/modules/news/NewsEditPage";
 import NewsFormPage from "@/modules/news/components/NewsForm";
 import DocsPage from "@/modules/docs/DocsPage";
 import PaymentPage from "@/modules/docs/PaymentPage";
+import ContactsPage from "@/modules/docs/ContactsPage";
 
 const routes = [
   {
@@ -36,6 +37,11 @@ const routes = [
     path: "/docs",
     name: "docs",
     component: DocsPage
+  },
+  {
+    path: "/contacts",
+    name: "contacts",
+    component: ContactsPage
   },
   {
     path: "/news/edit",

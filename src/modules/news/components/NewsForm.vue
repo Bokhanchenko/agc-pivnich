@@ -31,9 +31,7 @@
       </el-form-item>
     </el-form>
 
-    <div class="mt-2">
-      <pre>{{formData}}</pre>
-    </div>
+    <pre class="mt-4">{{formData}}</pre>
   </div>
 </template>
 
@@ -66,13 +64,13 @@ export default defineComponent({
 
     const formData = reactive({
       title: '',
-      date: new Date().toString(),
-      reporter: '',
+      date: new Date().toISOString(),
+      reporter: 'Правління',
       content: ''
     });
 
     const submit = () => {
-      console.info('submit');
+      console.info('submit', formData);
     };
 
     return {

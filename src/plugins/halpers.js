@@ -1,9 +1,3 @@
-const addZero = num => (Number(num) < 10 ? `${0}${num}` : num);
+import dayjs from "dayjs";
 
-export const getParsedDate = rawDate => {
-  const date = new Date(rawDate);
-  const year = date.getFullYear();
-  const day = date.getDay();
-  const month = date.getMonth();
-  return `${addZero(day)}.${addZero(month)}.${year}`;
-};
+export const getParsedDate = rawDate => dayjs(rawDate).format("DD.MM.YYYY");

@@ -7,7 +7,8 @@ const translations = {
     payment: "Реквізити",
     docs: "Документи",
     "news-create": "Створення новини",
-    "news-edit": "Редагування новини"
+    "news-edit": "Редагування новини",
+    contacts: "Контакти"
   },
 
   payment: {

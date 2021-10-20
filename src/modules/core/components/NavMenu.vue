@@ -11,6 +11,20 @@
         {{ $t(`routes.${item}`) }}
       </button>
     </router-link>
+
+    <template v-if="isDev">
+      <router-link
+        v-for="item in devMenu"
+        :key="item"
+        :to="{ name: item }"
+      >
+        <button
+          :class="['nav-menu__item', { 'is-active': isActive(item) }]"
+        >
+          {{ $t(`routes.${item}`) }}
+        </button>
+      </router-link>
+    </template>
   </div>
 </template>
 
@@ -18,12 +32,14 @@
 import { defineComponent } from "vue";
 import { $t } from '@/modules/core';
 
+
 export default defineComponent({
   name: 'NavMenu',
 
   setup() {
     return {
-      menu: ['home', 'payment', 'docs'],
+      menu: ['home', 'payment', 'contacts'],
+      devMenu: ['news-create', 'docs'],
       isActive (name) {
         return name === this.$route.name;
       }
