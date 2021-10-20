@@ -57,6 +57,17 @@
       <h3 class="label">Код ЄДПРОУ</h3>
       <div class="value">25661903</div>
     </div>
+
+    <div class="mt-4">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2536.1780347888707!2d30.629090201165695!3d50.53085908083818!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4d126d44e3357%3A0x848a905b62f1b1fa!2zItCh0LXQstC10YAiINCz0LDRgNCw0LbQvdGL0Lkg0LrQvtC-0L_QtdGA0LDRgtC40LIsINCa0LjQtdCyLCAwMjAwMA!5e0!3m2!1suk!2sua!4v1634749054889!5m2!1suk!2sua"
+        width="100%"
+        height="450"
+        style="border:0;"
+        allowfullscreen=""
+        loading="lazy"
+      />
+    </div>
   </div>
 </template>
 

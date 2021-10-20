@@ -71,7 +71,7 @@
       </div>
 
       <div class="mb-2">
-        <a href="requisites.pdf" target="blank">
+        <a href="/files/requisites.pdf" target="blank">
           Реквізити для оплати PDF
         </a>
       </div>
