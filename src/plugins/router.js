@@ -51,8 +51,9 @@ const routes = [
 ];
 
 const router = createRouter({
-  history: createWebHistory(),
-  routes
+  history: createWebHistory(process.env.BASE_URL),
+  routes,
+  mode: "hash"
 });
 
 export default router;

@@ -16,36 +16,27 @@
     <div class="item">
       <h3 class="label">Адміністрація:</h3>
       <div class="value">
-        <el-link href="tel:%2B380674449595">
-          +38 (067) 444-95-95
-        </el-link>
+        <el-link href="tel:%2B380674449595">+38 (067) 444-95-95</el-link>
       </div>
     </div>
 
     <div class="item">
       <h3 class="label">Бухгалтерія:</h3>
       <div class="value">
-        <el-link href="tel:%2B380673399595">
-          +38 (067) 339-95-95
-        </el-link>
+        <el-link href="tel:%2B380673399595">+38 (067) 339-95-95</el-link>
       </div>
     </div>
 
     <div class="item">
       <h3 class="label">Охорона:</h3>
       <div class="value">
-        <el-link href="tel:%2B380631146422">
-          +38 (063) 114-64-22
-        </el-link>
+        <el-link href="tel:%2B380631146422">+38 (063) 114-64-22</el-link>
       </div>
     </div>
 
     <div class="item">
       <h3 class="label">Адреса:</h3>
-      <div class="value">
-        місто Київ, вулиця Миколи Закревського, 93
-      </div>
-      Код ЄДПРОУ: 25661903
+      <div class="value">місто Київ, вулиця Миколи Закревського, 93</div>
     </div>
 
     <div class="item">
