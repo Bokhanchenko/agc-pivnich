@@ -23,7 +23,15 @@
     <div class="item">
       <h3 class="label">Бухгалтерія:</h3>
       <div class="value">
-        <el-link href="tel:%2B380673399595">+38 (067) 339-95-95</el-link>
+        <div>
+          <el-link href="tel:%2B380673399595">+38 (067) 339-95-95</el-link>
+        </div>
+        <div class="pg-2">
+          Пн: 17:00 - 19:00 <br>
+          Вт: 17:00 - 19:00 <br>
+          Ср: 17:00 - 19:00 <br>
+          Чт: 11:00 - 12:00
+        </div>
       </div>
     </div>
 
