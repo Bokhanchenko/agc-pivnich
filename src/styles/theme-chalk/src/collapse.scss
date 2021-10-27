@@ -30,6 +30,8 @@
     font-weight: 500;
     transition: border-bottom-color var(--el-transition-duration);
     outline: none;
+    padding-left: 10px;
+
     @include e(arrow) {
       margin: 0 8px 0 auto;
       transition: transform var(--el-transition-duration);

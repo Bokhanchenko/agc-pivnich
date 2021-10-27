@@ -5,7 +5,7 @@
     </div>
 
     <div class="mb-4">
-      <div class="pg-2-0">
+      <div class="mb-2">
         <h3>{{ $t('payment.tariffs') }}</h3>
       </div>
 
@@ -22,7 +22,7 @@
     </div>
 
     <div class="mb-4">
-      <div class="pg-2-0">
+      <div class="mb-2">
         <h3>{{ $t('payment.title') }}</h3>
       </div>
 
@@ -77,7 +77,7 @@
       </div>
 
       <div>
-        <img src="@/assets/requisites.jpg" alt="Payment template">
+        <img src="@/assets/files/requisites.jpg" alt="Payment template">
       </div>
     </div>
   </div>

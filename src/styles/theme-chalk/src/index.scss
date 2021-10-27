@@ -22,11 +22,11 @@
 //@use './checkbox-group.scss';
 //@use './checkbox.scss';
 //@use './col.scss';
-//@use './collapse-item.scss';
-//@use './collapse.scss';
+@use './collapse-item.scss';
+@use './collapse.scss';
 //@use './color-picker.scss';
 //@use './config-provider.scss';
-//@use './container.scss';
+@use './container.scss';
 //@use './date-picker.scss';
 //@use './descriptions';
 //@use './descriptions-item';
@@ -46,7 +46,7 @@
 //@use './infinite-scroll.scss';
 //@use './input-number.scss';
 //@use './input.scss';
-//@use './link.scss';
+@use './link.scss';
 //@use './loading.scss';
 //@use './main.scss';
 //@use './menu-item-group.scss';
@@ -66,7 +66,7 @@
 //@use './radio.scss';
 //@use './rate.scss';
 //@use './result.scss';
-//@use './row.scss';
+@use './row.scss';
 //@use './scrollbar.scss';
 //@use './select-v2.scss';
 //@use './select.scss';

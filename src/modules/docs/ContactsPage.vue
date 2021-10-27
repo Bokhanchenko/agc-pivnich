@@ -85,7 +85,9 @@ export default defineComponent({
 
 <style scoped lang=scss>
 .contacts-page {
-  font-size: 1.4rem;
+  * {
+    font-size: 1.4rem;
+  }
 
   .item {
     display: flex;

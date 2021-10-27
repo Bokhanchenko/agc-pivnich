@@ -38,8 +38,8 @@ export default defineComponent({
 
   setup() {
     return {
-      menu: ['home', 'payment', 'contacts'],
-      devMenu: ['news-create', 'docs'],
+      menu: ['home', 'payment', 'contacts', 'docs'],
+      devMenu: ['news-create'],
       isActive (name) {
         return name === this.$route.name;
       }

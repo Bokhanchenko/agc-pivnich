@@ -8,8 +8,6 @@
       <section class="content">
         <router-view />
       </section>
-
-      <PageFooter />
     </div>
   </div>
 </template>
@@ -18,7 +16,6 @@
 import { defineComponent } from "vue";
 import PageHeader from '@/modules/core/components/PageHeader';
 import PageHeaderM from '@/modules/core/components/PageHeaderM';
-import PageFooter from '@/modules/core/components/PageFooter';
 import NavMenu from '@/modules/core/components/NavMenu';
 
 export default defineComponent({
@@ -27,7 +24,6 @@ export default defineComponent({
   components: {
     PageHeader,
     PageHeaderM,
-    PageFooter,
     NavMenu
   }
 });
@@ -36,7 +32,7 @@ export default defineComponent({
 <style scoped lang="scss">
 .app {
   min-height: 100vh;
-  background: url("./assets/app-back.jpeg") center center fixed;
+  background: url("assets/app-back.jpeg") center center fixed;
   background-size: cover;
 
   .wrapper {
