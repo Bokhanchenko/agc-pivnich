@@ -13,7 +13,7 @@
       </div>
     </div>
 
-    <div v-html="value.content" />
+    <div class="pg-0-2" v-html="value.content" />
   </div>
 </template>
 

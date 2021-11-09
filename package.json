@@ -9,13 +9,15 @@
     "lf": "vue-cli-service lint --fix --ignore-path .eslintignore ."
   },
   "dependencies": {
+    "@element-plus/icons": "0.0.11",
     "@oruga-ui/oruga-next": "^0.4.5",
     "core-js": "^3.6.5",
     "dayjs": "^1.10.7",
     "element-plus": "^1.1.0-beta.19",
     "lodash": "^4.17.21",
     "vue": "^3.0.0",
-    "vue-router": "^4.0.11"
+    "vue-router": "^4.0.11",
+    "vue3-quill": "^0.2.6"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "~4.5.0",

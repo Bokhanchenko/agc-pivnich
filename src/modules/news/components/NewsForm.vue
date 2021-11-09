@@ -20,7 +20,11 @@
       </el-form-item>
 
       <el-form-item prop="content" :label="$t('news.content')">
-        <el-input type="textarea" :rows="10" v-model="formData.content" />
+<!--        <el-input type="textarea" :rows="10" v-model="formData.content" />-->
+        <TheTextEditor
+          :value="formData.content"
+          @input="setTT"
+        />
       </el-form-item>
 
       <el-form-item>
@@ -28,10 +32,14 @@
         <el-button native-type="submit" type="primary">
           {{ $t('buttons.submit') }}
         </el-button>
+        <div class="flex">
+          <div class="mr-2">Копіювати контент</div>
+          <BufferCopy :value="formData.content" />
+        </div>
       </el-form-item>
     </el-form>
 
-    <pre class="mt-4">{{formData}}</pre>
+    <pre class="mb-4">{{formDataInfo}}</pre>
   </div>
 </template>
 
@@ -46,6 +54,9 @@ import {
   ElDatePicker
 } from 'element-plus';
 
+import TheTextEditor from '@/modules/core/components/TheTextEditor';
+import BufferCopy from '@/modules/core/components/BufferCopy';
+
 export default defineComponent({
   name: 'NewsForm',
 
@@ -54,13 +65,20 @@ export default defineComponent({
     ElFormItem,
     ElInput,
     ElButton,
-    ElDatePicker
+    ElDatePicker,
+    TheTextEditor,
+    BufferCopy
   },
 
   setup () {
     const form = ref(null);
     const disabled = ref(false);
     const isLoading = ref(false);
+    const formDataInfo = reactive({
+      title: '',
+      date: new Date().toISOString(),
+      reporter: 'Правління',
+    });
 
     const formData = reactive({
       title: '',
@@ -70,17 +88,25 @@ export default defineComponent({
     });
 
     const submit = () => {
-      console.info('submit', formData);
+      formDataInfo.title = formData.title;
+      formDataInfo.date = formData.date;
+      formDataInfo.reporter = formData.reporter;
     };
 
     return {
       $t,
       form,
       formData,
+      formDataInfo,
       disabled,
       isLoading,
       submit,
-      cancel: () => this.$router.push({ name: 'news' })
+      cancel: () => this.$router.push({ name: 'news' }),
+      setTT: (event) => {
+        if(typeof event === 'string') {
+          formData.content = event;
+        }
+      }
     };
   },
 
@@ -96,6 +122,8 @@ export default defineComponent({
 
 <style scoped lang=scss>
 .news-form {
-
+  pre {
+    max-width: 100%;
+  }
 }
 </style>
