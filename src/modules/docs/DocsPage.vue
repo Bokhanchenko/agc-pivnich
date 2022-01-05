@@ -3,7 +3,7 @@
     <el-collapse accordion v-model="activeNames">
       <el-collapse-item title="Графік зміни тарифів" name="1">
         <img
-          src="@/assets/files/price.jpg"
+          src="/files/price.jpg"
           alt="Графік зміни тарифів"
         >
       </el-collapse-item>

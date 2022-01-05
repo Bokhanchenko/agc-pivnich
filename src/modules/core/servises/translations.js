@@ -15,7 +15,7 @@ const translations = {
     tariffs: "Тарифи",
     title: "Реквізити для оплати членских внесків та електроенергії",
     currentAccount: "Поточний рахунок",
-    edrpou: "ЄДРПОУ",
+    edrpou: "Код отримувача",
     bankCode: "Код установи банку",
     bankName: "Найменування банку",
     recipientOfPayment: "Одержувач платежу",
